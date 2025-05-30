@@ -1,107 +1,194 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us - DonSwa Painting Services</title>
-    <link rel="stylesheet" href="styles.css">
-        <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #FFD700;
-            margin: 0;
-            padding: 0;
-            color: #333;
-            background-image: url('1.jpg');
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-        }
-        header {
-            background: rgba(51, 51, 51, 0.8);
-            color: #fff;
-            padding: 1em 0;
-            text-align: center;
-        }
-        header h1 {
-            margin: 0;
-        }
-        nav {
-            background: rgba(68, 68, 68, 0.8);
-            text-align: center;
-            padding: 0.5em 0;
-        }
-        nav a {
-            color: #fff;
-            margin: 0 1em;
-            text-decoration: none;
-            padding: 0.5em 1em;
-            display: inline-block;
-        }
-        nav a:hover {
-            background: #555;
-        }
-        .container {
-            padding: 2em;
-            text-align: center;
-            background: rgba(255, 255, 255, 0.8);
-            margin: 2em;
-            border-radius: 8px;
-        }
-        .container h2 {
-            margin-top: 0;
-        }
-        .logo {
-            text-align: center;
-            margin: 2em 0;
-        }
-        .logo img {
-            width: 150px;
-            height: auto;
-        }
-        .portfolio {
-            margin: 3em 0;
-        }
-        .portfolio h3 {
-            margin-bottom: 1em;
-        }
-        .portfolio img {
-            width: 30%;
-            margin: 0.5em;
-            height: auto;
-            border: 2px solid #fff;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-        }
-        footer {
-    background: rgba(51, 51, 51, 0.8);
-    color: #fff;
-    text-align: center;
-    padding: 1em 0;
-    width: 100%;
-    bottom: 0;
-}
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us - DonSwa Painting Services</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --primary-color: #f5c518;
+      --dark-bg: rgba(0, 0, 0, 0.6);
+      --light-bg: rgba(255, 255, 255, 0.9);
+      --text-color: #333;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      color: var(--text-color);
+      background-image: url('1.jpg');
+      background-size: cover;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+    }
+
+    header {
+      background: var(--dark-bg);
+      color: white;
+      text-align: center;
+      padding: 1.5rem 1rem;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    header h1 {
+      font-size: 2rem;
+      margin-bottom: 0.3rem;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      background: rgba(0, 0, 0, 0.7);
+      padding: 0.7rem 1rem;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 0.6rem 1rem;
+      border-radius: 4px;
+      transition: background 0.3s;
+    }
+
+    nav a:hover {
+      background: var(--primary-color);
+      color: black;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 3rem auto;
+      background: var(--light-bg);
+      padding: 2rem;
+      border-radius: 12px;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    .container h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: #111;
+    }
+
+    .logo img {
+      width: 150px;
+      margin-bottom: 1rem;
+    }
+
+    .portfolio {
+      margin: 3rem 0;
+    }
+
+    .portfolio h3 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .portfolio-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+    }
+
+    .portfolio img {
+      width: 30%;
+      min-width: 250px;
+      border-radius: 8px;
+      border: 3px solid #fff;
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+      transition: transform 0.3s;
+    }
+
+    .portfolio img:hover {
+      transform: scale(1.03);
+    }
+
+    footer {
+      background: var(--dark-bg);
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 768px) {
+      nav {
+        flex-direction: column;
+      }
+
+      .portfolio img {
+        width: 90%;
+      }
+
+      header h1 {
+        font-size: 1.5rem;
+      }
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>DonSwa Painting Services</h1>
-        <p>Your satisfaction is our priority</p>
-    </header>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="services.html">Services</a>
-        <a href="contact.html">Contact</a>
-    </nav>
-    <div class="container">
-        <h2>About Us</h2>
-        <p>We are a team of professional painters with over 5 years of experience in the industry. Our mission is to provide high-quality painting services that enhance the beauty and value of your home.</p>
+  <header>
+    <h1>DonSwa Painting Services</h1>
+    <p>Your satisfaction is our priority</p>
+  </header>
+
+  <nav id="navbar">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <main class="container">
+    <div class="logo">
+      <img src="logo.png" alt="DonSwa Logo" />
     </div>
-    <footer>
-        <p>© 2024 DonSwa Painting Services</p>
-            <p>Contact us: (+231) 775-110841/ (+231-777-311487) | info@donswapainting.com</p>
-            <p>Paynesville City, Japanese Freeway, Lone Star Community, Montserrado, Liberia, West Africa</p>
-            <p>Operating Hours: Mon - Sun: 9am - 6pm</p>
-    </footer>
+    <h2>About Us</h2>
+    <p>
+      We are a team of professional painters with over 5 years of experience in the industry.
+      Our mission is to provide high-quality painting services that enhance the beauty and
+      value of your home.
+    </p>
+
+    <div class="portfolio">
+      <h3>Our Work</h3>
+      <div class="portfolio-grid">
+        <img src="2.jpg" alt="Portfolio 1" />
+        <img src="3.jpg" alt="Portfolio 2" />
+        <img src="4.jpg" alt="Portfolio 3" />
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2024 DonSwa Painting Services</p>
+    <p>Contact us: (+231) 775-110841 / (+231-777-311487) | info@donswapainting.com</p>
+    <p>Paynesville City, Japanese Freeway, Lone Star Community, Montserrado, Liberia</p>
+    <p>Operating Hours: Mon - Sun: 9am - 6pm</p>
+  </footer>
+
+  <script>
+    // Sticky nav effect or mobile nav enhancements can go here
+    const nav = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 50) {
+        nav.style.background = '#000';
+      } else {
+        nav.style.background = 'rgba(0, 0, 0, 0.7)';
+      }
+    });
+  </script>
 </body>
 </html>
