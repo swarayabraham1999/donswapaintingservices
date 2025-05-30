@@ -1,208 +1,208 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DonSwa Painting Services</title>
-    <link rel="stylesheet" href="styles.css">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #FFD700;
-            margin: 0;
-            padding: 0;
-            color: #333;
-            background-image: url('1.jpg');
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-        }
-        header {
-            background: rgba(51, 51, 51, 0.8);
-            color: #fff;
-            padding: 1em 0;
-            text-align: center;
-        }
-        header h1 {
-            margin: 0;
-        }
-        nav {
-            background: rgba(68, 68, 68, 0.8);
-            text-align: center;
-            padding: 0.5em 0;
-        }
-        nav a {
-            color: #fff;
-            margin: 0 1em;
-            text-decoration: none;
-            padding: 0.5em 1em;
-            display: inline-block;
-        }
-        nav a:hover {
-            background: #555;
-        }
-        .container {
-            padding: 2em;
-            text-align: center;
-            background: rgba(255, 255, 255, 0.8);
-            margin: 2em;
-            border-radius: 8px;
-        }
-        .container h2 {
-            margin-top: 0;
-        }
-        .logo {
-            text-align: center;
-            margin: 2em 0;
-        }
-        .logo img {
-            width: 150px;
-            height: auto;
-        }
-        .portfolio {
-            margin: 3em 0;
-        }
-        .portfolio h3 {
-            margin-bottom: 1em;
-        }
-        .portfolio img {
-            width: 30%;
-            margin: 0.5em;
-            height: auto;
-            border: 2px solid #fff;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DonSwa Painting Services</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #FFD700;
+      margin: 0;
+      padding: 0;
+      color: #333;
+      background-image: url('1.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+    }
 
-        footer {
-    background: rgba(51, 51, 51, 0.8);
-    color: #fff;
-    text-align: center;
-    padding: 1em 0;
-    width: 100%;
-    bottom: 0;
-}
+    header {
+      background: rgba(51, 51, 51, 0.85);
+      color: #fff;
+      padding: 1.5em 1em;
+      text-align: center;
+    }
 
-.contact {
-            margin-top: 2rem;
-            padding: 2rem;
-            background: #fff;
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-        }
+    nav {
+      background: rgba(68, 68, 68, 0.85);
+      text-align: center;
+      padding: 0.75em 1em;
+    }
 
-        .contact h2 {
-            text-align: center;
-            margin-bottom: 1rem;
-        }
+    nav a {
+      color: #fff;
+      margin: 0 1em;
+      text-decoration: none;
+      padding: 0.5em 1em;
+      transition: background 0.3s;
+    }
 
-        .contact form {
-            display: flex;
-            flex-direction: column;
-            gap: 1.5rem;
-            max-width: 600px;
-            margin: 0 auto;
-            background: #f9f9f9;
-            padding: 2rem;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
+    nav a:hover {
+      background: #555;
+    }
 
-        .contact input, .contact textarea {
-            width: 100%;
-            padding: 1rem;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            font-size: 1rem;
-            font-family: inherit;
-            background: #fff;
-            transition: border-color 0.3s, box-shadow 0.3s;
-        }
+    .container {
+      padding: 2rem;
+      background: rgba(255, 255, 255, 0.9);
+      margin: 2rem auto;
+      max-width: 1000px;
+      border-radius: 10px;
+    }
 
-        .contact input:focus, .contact textarea:focus {
-            border-color: #333;
-            box-shadow: 0 0 5px rgba(51, 51, 51, 0.5);
-            outline: none;
-        }
+    .logo {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
 
-        .contact button {
-            padding: 1rem;
-            background: #333;
-            color: #fff;
-            border: none;
-            border-radius: 5px;
-            font-size: 1rem;
-            cursor: pointer;
-            transition: background 0.3s;
-        }
+    .logo img {
+      width: 160px;
+    }
 
-        .contact button:hover {
-            background: #555;
-        }
+    .portfolio {
+      margin-top: 3rem;
+    }
 
-        .contact label {
-            font-size: 1rem;
-            margin-bottom: 0.5rem;
-            font-weight: bold;
-        }
-    </style>
+    .portfolio h3 {
+      text-align: center;
+      margin-bottom: 1.5rem;
+    }
+
+    .portfolio img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+
+    .portfolio-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+    }
+
+    .contact {
+      margin-top: 3rem;
+      padding: 2rem;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .contact h2 {
+      text-align: center;
+      margin-bottom: 1.5rem;
+    }
+
+    .contact form {
+      display: flex;
+      flex-direction: column;
+      gap: 1.25rem;
+    }
+
+    .contact label {
+      font-weight: bold;
+    }
+
+    .contact input, .contact textarea {
+      padding: 1rem;
+      font-size: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      transition: border-color 0.3s;
+    }
+
+    .contact input:focus, .contact textarea:focus {
+      border-color: #007bff;
+      outline: none;
+    }
+
+    .contact button {
+      padding: 1rem;
+      background: #333;
+      color: #fff;
+      font-size: 1rem;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .contact button:hover {
+      background: #555;
+    }
+
+    footer {
+      background: rgba(51, 51, 51, 0.85);
+      color: #fff;
+      text-align: center;
+      padding: 2rem 1rem;
+      margin-top: 4rem;
+    }
+
+    @media (max-width: 768px) {
+      nav a {
+        display: block;
+        margin: 0.5rem 0;
+      }
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>DonSwa Painting Services</h1>
-        <p>Your satisfaction is our priority</p>
-    </header>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="services.html">Services</a>
-        <a href="contact.html">Contact</a>
-    </nav>
-    <div class="container">
-        <div class="logo">
-            <img src="DPS LOGO 2024.jpg" alt="DonSwa Logo">
-        </div>
-        <h2>Welcome to Our House Painting Services</h2>
-        <p>We offer professional house painting services that bring color and life to your home. Our skilled painters are dedicated to providing top-quality work, ensuring your satisfaction every step of the way.</p>
-        
-        
-        <div class="portfolio">
-            <h3>Our Portfolio</h3>
-            <img src="1.jpg" alt="Portfolio 1">
-            <img src="2.jpg" alt="Portfolio 2">
-            <img src="3.jpg" alt="Portfolio 3">
-            <img src="4.jpg" alt="Portfolio 4">
-            <img src="5.jpg" alt="Portfolio 5">
-            <img src="6.jpg" alt="Portfolio 6">
-            <img src="7.jpg" alt="Portfolio 7">
-            <img src="8.jpg" alt="Portfolio 8">
-            <img src="9.jpg" alt="Portfolio 9">
-            <img src="10.jpg" alt="Portfolio 10">
-            <img src="11.jpg" alt="Portfolio 11">
-            <img src="12.jpg" alt="Portfolio 12">
-        </div>
-    </div>
-       <section class="contact">
-            <h2>Contact Me</h2>
-            <form action="mailto:https://formsubmit.co/el/menalo" method="POST" enctype="text/plain">
-                <label for="name">Your Name</label>
-                <input type="text" id="name" name="name" placeholder="Enter your name" required>
-                
-                <label for="email">Your Email</label>
-                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+  <header>
+    <h1>DonSwa Painting Services</h1>
+    <p>Your satisfaction is our priority</p>
+  </header>
 
-                <label for="message">Your Message</label>
-                <textarea id="message" name="message" rows="5" placeholder="Write your message" required></textarea>
-                
-                <button type="submit">Send Message</button>
-            </form>
-        </section>
-    <footer>
-        <p>© 2024 DonSwa Painting Services</p>
-            <p>Contact us: (+231) 775-110841/ (+231-777-311487) | http//swarayabraham1999.github.io.donswapaintingservices</p>
-            <p>Paynesville City, Japanese Freeway, Lone Star Community, Montserrado, Liberia, West Africa</p>
-            <p>Operating Hours: Mon - Sun: 9am - 6pm</p>
-    </footer>
-     <script src="script.js"></script>
-</body>
-</html>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <div class="container">
+    <div class="logo">
+      <img src="DPS LOGO 2024.jpg" alt="DonSwa Logo" />
+    </div>
+    <h2>Welcome to Our House Painting Services</h2>
+    <p>We offer professional house painting services that bring color and life to your home. Our skilled painters are dedicated to providing top-quality work, ensuring your satisfaction every step of the way.</p>
+
+    <div class="portfolio">
+      <h3>Our Portfolio</h3>
+      <div class="portfolio-grid">
+        <img src="1.jpg" alt="Portfolio 1" />
+        <img src="2.jpg" alt="Portfolio 2" />
+        <img src="3.jpg" alt="Portfolio 3" />
+        <img src="4.jpg" alt="Portfolio 4" />
+        <img src="5.jpg" alt="Portfolio 5" />
+        <img src="6.jpg" alt="Portfolio 6" />
+        <img src="7.jpg" alt="Portfolio 7" />
+        <img src="8.jpg" alt="Portfolio 8" />
+        <img src="9.jpg" alt="Portfolio 9" />
+        <img src="10.jpg" alt="Portfolio 10" />
+        <img src="11.jpg" alt="Portfolio 11" />
+        <img src="12.jpg" alt="Portfolio 12" />
+      </div>
+    </div>
+  </div>
+
+  <section class="contact" id="contact">
+    <h2>Contact Us</h2>
+    <form action="https://formsubmit.co/el/menalo" method="POST">
+      <label for="name">Your Name</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name" required />
+
+      <label for="email">Your Email</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required />
+
+      <label for="message">Your Message</label>
+      <textarea id="message" name="message" rows="5" placeholder="Write your message here" required></textarea>
+
+      <!-- Hidden fields for FormSubmit -->
+      <input type="hidden" name="_captcha" value="false">
